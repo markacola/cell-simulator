@@ -43,9 +43,12 @@ const getIndex = (state: BoardState, x: number, y: number): number =>
   x + y * state.width
 
 const getCell = (state: BoardState, x: number, y: number): CellState | null => {
-  if (x < 0 || x >= state.width || y < 0 || y >= state.height) {
-    return null
-  }
+  // wrap x & y
+  if (x < 0) x += state.width
+  if (x >= state.width) x -= state.width
+  if (y < 0) y += state.height
+  if (y >= state.height) y -= state.height
+
   return state.cellStates[getIndex(state, x, y)]
 }
 
