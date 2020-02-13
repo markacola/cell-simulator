@@ -1,5 +1,11 @@
 import React, { FC, useReducer } from 'react'
+import styled from 'styled-components'
 import Cell from './Cell'
+
+const Svg = styled.svg`
+  flex-grow: 1;
+  width: 100%;
+`
 
 const initializer: (arg: {
   width: number
@@ -48,12 +54,18 @@ const GameOfLifeBoard: FC<{
     }
   >(reducer, { width, height }, initializer)
 
+  const svgWidth = width * 10 + 1
+  const svgHeight = height * 10 + 1
   return (
-    <svg fill="white" width={width * 10 + 1} height={height * 10 + 1}>
+    <Svg
+      fill="white"
+      width={svgWidth}
+      height={svgHeight}
+      viewBox={`0 0 ${svgWidth} ${svgHeight}`}>
       {cellStates.map((s, i) => (
         <Cell dispatch={dispatch} key={i} {...s} />
       ))}
-    </svg>
+    </Svg>
   )
 }
 

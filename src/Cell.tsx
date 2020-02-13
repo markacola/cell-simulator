@@ -1,4 +1,9 @@
 import React, { FC, useCallback } from 'react'
+import styled from 'styled-components'
+
+const Rect = styled.rect`
+  cursor: pointer;
+`
 
 const Cell: FC<CellState & { dispatch: React.Dispatch<BoardAction> }> = ({
   alive,
@@ -6,7 +11,7 @@ const Cell: FC<CellState & { dispatch: React.Dispatch<BoardAction> }> = ({
   y,
   dispatch,
 }) => (
-  <rect
+  <Rect
     onClick={useCallback(
       () => dispatch({ type: 'toggle-cell', payload: { x, y } }),
       [dispatch, x, y]
