@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/cell-simulator/static/css/main.b30e35bf.chunk.css",
+    "main.js": "/cell-simulator/static/js/main.36edb6b1.chunk.js",
+    "main.js.map": "/cell-simulator/static/js/main.36edb6b1.chunk.js.map",
+    "runtime-main.js": "/cell-simulator/static/js/runtime-main.b92d296e.js",
+    "runtime-main.js.map": "/cell-simulator/static/js/runtime-main.b92d296e.js.map",
+    "static/js/2.dbad0dd5.chunk.js": "/cell-simulator/static/js/2.dbad0dd5.chunk.js",
+    "static/js/2.dbad0dd5.chunk.js.map": "/cell-simulator/static/js/2.dbad0dd5.chunk.js.map",
+    "index.html": "/cell-simulator/index.html",
+    "precache-manifest.a0c0560a4e679120e658016191d6514e.js": "/cell-simulator/precache-manifest.a0c0560a4e679120e658016191d6514e.js",
+    "service-worker.js": "/cell-simulator/service-worker.js",
+    "static/css/main.b30e35bf.chunk.css.map": "/cell-simulator/static/css/main.b30e35bf.chunk.css.map",
+    "static/js/2.dbad0dd5.chunk.js.LICENSE.txt": "/cell-simulator/static/js/2.dbad0dd5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b92d296e.js",
+    "static/js/2.dbad0dd5.chunk.js",
+    "static/css/main.b30e35bf.chunk.css",
+    "static/js/main.36edb6b1.chunk.js"
+  ]
+}
