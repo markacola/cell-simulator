@@ -1,12 +1,11 @@
 import React from 'react'
+import GameOfLifeBoard from './GameOfLifeBoard'
 
 const App = () => {
   return (
-    <div>
-      <main>
-        <p>init</p>
-      </main>
-    </div>
+    <main>
+      <GameOfLifeBoard width={50} height={50} />
+    </main>
   )
 }
 
