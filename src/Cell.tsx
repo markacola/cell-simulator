@@ -21,6 +21,9 @@ const Cell: FC<CellState & { dispatch: React.Dispatch<BoardAction> }> = ({
     height={9}
     x={x * 10 + 1}
     y={y * 10 + 1}
+    data-x={x}
+    data-y={y}
+    data-alive={alive}
   />
 )
 
