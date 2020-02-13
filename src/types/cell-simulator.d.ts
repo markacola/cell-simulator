@@ -10,10 +10,13 @@ interface CellState {
   y: number
 }
 
-type BoardAction = {
-  type: 'toggle-cell'
-  payload: {
-    x: number
-    y: number
-  }
-}
+type BoardAction =
+  | { type: 'reset' }
+  | { type: 'next-generation' }
+  | {
+      type: 'toggle-cell'
+      payload: {
+        x: number
+        y: number
+      }
+    }
